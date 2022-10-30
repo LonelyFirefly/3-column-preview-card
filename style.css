@@ -98,5 +98,15 @@ main {
 	color: var(--third-column-background);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 920px) {
+	main {
+		padding: 40px;
+		padding-top: 40px;
+	}
+
+	.product {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+	}
 }
