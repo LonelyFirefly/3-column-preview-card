@@ -4,6 +4,7 @@
 	--first-column-background: hsl(31, 77%, 52%);
 	--second-column-background: hsl(184, 100%, 22%);
 	--third-column-background: hsl(179, 100%, 13%);
+
 	--fs: 20px;
 }
 
@@ -74,16 +75,33 @@ main {
 
 .product__button {
 	font-family: Big Shoulders Display, sans-serif;
+	/* box-sizing: border-box; */
 	display: flex;
 	justify-items: center;
 	align-items: center;
-	/* color: var(--first-column-background); */
 	border-radius: 50px;
 	border: none;
 	padding: 15px;
 	padding-right: 30px;
 	padding-left: 30px;
 	margin-right: auto;
+}
+
+.product__button:hover {
+	color: var(--clr-accent);
+	border: 3px solid var(--clr-accent);
+	cursor: pointer;
+}
+.product__button_first:hover {
+	background-color: var(--first-column-background);
+}
+
+.product__button_second:hover {
+	background-color: var(--second-column-background);
+}
+
+.product__button_third:hover {
+	background-color: var(--third-column-background);
 }
 
 .product__button_first {
@@ -100,8 +118,7 @@ main {
 
 @media screen and (max-width: 920px) {
 	main {
-		padding: 40px;
-		padding-top: 40px;
+		padding: 10px 40px;
 	}
 
 	.product {
