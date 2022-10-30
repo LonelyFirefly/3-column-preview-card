@@ -74,6 +74,17 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ```
 I used box-sizing: border-box; for the browser to account for any border and padding in the values I would specify for an element's width and height. This property typically makes it much easier to size elements. 
 
+```
+.product {
+	max-width: 920px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	overflow: hidden;
+	border-radius: 10px;
+}
+```
+Here I used overflow:hidden property so that border-radius property worked. You see, you have to set overflow: hidden because otherwise the child div's overflow can give the impression that the border-radius isn't working.
+
 ---
 	
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
