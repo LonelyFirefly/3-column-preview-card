@@ -1,1 +1,50 @@
+:root {
+	--clr-accent: hsl(0, 0%, 95%);
+	--clr-text: hsla(0, 0%, 100%, 0.75);
+	--first-column-background: hsl(31, 77%, 52%);
+	--second-column-background: hsl(184, 100%, 22%);
+	--third-column-background: hsl(179, 100%, 13%);
+	--fs: 15px;
+}
 
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body,
+main {
+	height: 100%;
+}
+
+body {
+	font-family: Lexend Deca, serif;
+	font-size: var(--fs);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.product {
+	max-width: 1440px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.product__first-column {
+	background-color: var(--first-column-background);
+}
+.product__second-column {
+	background-color: var(--second-column-background);
+}
+.product__third-column {
+	background-color: var(--third-column-background);
+}
+@media screen and (max-width: 375px) {
+}
