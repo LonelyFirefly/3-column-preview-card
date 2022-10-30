@@ -63,6 +63,19 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
+```css
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+```
+I used box-sizing: border-box; for the browser to account for any border and padding in the values I would specify for an element's width and height. This property typically makes it much easier to size elements. 
+
+---
+	
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
@@ -70,9 +83,7 @@ To see how you can add code snippets, see below:
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
-```
-<p>fadfdas</p>
-```
+
 ```css
 .proud-of-this-css {
 	color: papayawhip;
