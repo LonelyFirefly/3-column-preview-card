@@ -32,18 +32,18 @@ main {
 	align-items: center;
 }
 .product {
-	max-width: 1440px;
+	max-width: 920px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 }
 
-.product__first-column {
+.product__column_first {
 	background-color: var(--first-column-background);
 }
-.product__second-column {
+.product__column_second {
 	background-color: var(--second-column-background);
 }
-.product__third-column {
+.product__column_third {
 	background-color: var(--third-column-background);
 }
 @media screen and (max-width: 375px) {
