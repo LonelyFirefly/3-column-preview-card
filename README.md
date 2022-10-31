@@ -92,6 +92,7 @@ main {
 	}
 ```
 I struggled with mobile version margins. The card would stick to screen borders. It took me a while to think of using height:fit-content.
+
 ---
 	
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
