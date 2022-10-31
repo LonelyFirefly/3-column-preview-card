@@ -5,7 +5,7 @@
 	--second-column-background: hsl(184, 100%, 22%);
 	--third-column-background: hsl(179, 100%, 13%);
 
-	--fs: 20px;
+	--fs: 15px;
 }
 
 *,
@@ -23,7 +23,7 @@ main {
 }
 
 body {
-	font-family: Lexend Deca, serif;
+	font-family: "Lexend Deca", sans-serif;
 	font-size: var(--fs);
 }
 
@@ -52,7 +52,7 @@ main {
 }
 
 .product__column {
-	padding: 40px;
+	padding: 50px;
 }
 
 .car-icon {
@@ -60,7 +60,7 @@ main {
 }
 
 .product__name {
-	font-family: Big Shoulders Display, sans-serif;
+	font-family: "Big Shoulders Display", sans-serif;
 	color: var(--clr-accent);
 	font-size: 25px;
 	text-transform: uppercase;
@@ -74,23 +74,20 @@ main {
 }
 
 .product__button {
-	font-family: Big Shoulders Display, sans-serif;
-	/* box-sizing: border-box; */
+	font-family: "Lexend Deca", sans-serif;
 	display: flex;
 	justify-items: center;
 	align-items: center;
+	cursor: pointer;
 	border-radius: 50px;
 	border: none;
 	padding: 15px;
 	padding-right: 30px;
 	padding-left: 30px;
-	margin-right: auto;
 }
-
 .product__button:hover {
 	color: var(--clr-accent);
 	border: 3px solid var(--clr-accent);
-	cursor: pointer;
 }
 .product__button_first:hover {
 	background-color: var(--first-column-background);
@@ -116,8 +113,10 @@ main {
 	color: var(--third-column-background);
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 768px) {
 	main {
+		display: block;
+
 		padding: 10px 40px;
 	}
 
