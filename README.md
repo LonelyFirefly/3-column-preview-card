@@ -85,6 +85,13 @@ I used box-sizing: border-box; for the browser to account for any border and pad
 ```
 Here I used overflow:hidden property so that border-radius property worked. You see, you have to set overflow: hidden because otherwise the child div's overflow can give the impression that the border-radius isn't working.
 
+```
+main {
+		padding: 80px 20px;
+		height: fit-content;
+	}
+```
+I struggled with mobile version margins. The card would stick to screen borders. It took me a while to think of using height:fit-content.
 ---
 	
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
