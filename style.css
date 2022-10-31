@@ -5,7 +5,9 @@
 	--second-column-background: hsl(184, 100%, 22%);
 	--third-column-background: hsl(179, 100%, 13%);
 
-	--fs: 15px;
+	--fs-normal: 15px;
+	--fs-greater: 40px;
+	--f-opacity: 0.8;
 }
 
 *,
@@ -24,7 +26,7 @@ main {
 
 body {
 	font-family: "Lexend Deca", sans-serif;
-	font-size: var(--fs);
+	font-size: var(--fs-normal);
 }
 
 main {
@@ -33,17 +35,17 @@ main {
 	align-items: center;
 }
 
-.product__column_first {
+.card_first {
 	background-color: var(--first-column-background);
 }
-.product__column_second {
+.card_second {
 	background-color: var(--second-column-background);
 }
-.product__column_third {
+.card_third {
 	background-color: var(--third-column-background);
 }
 
-.product {
+.cards {
 	max-width: 920px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -51,7 +53,7 @@ main {
 	border-radius: 10px;
 }
 
-.product__column {
+.card {
 	padding: 50px;
 }
 
@@ -59,22 +61,24 @@ main {
 	margin-bottom: 40px;
 }
 
-.product__name {
+.card__name {
 	font-family: "Big Shoulders Display", sans-serif;
 	color: var(--clr-accent);
-	font-size: 25px;
+	font-size: var(--fs-greater);
 	text-transform: uppercase;
 	margin-bottom: 40px;
 }
 
-.product__ad-text {
+.card__ad-text {
 	line-height: 1.5em;
 	color: var(--clr-text);
+	opacity: var(--f-opacity);
 	margin-bottom: 100px;
 }
 
-.product__button {
+.card__button {
 	font-family: "Lexend Deca", sans-serif;
+	font-weight: bold;
 	display: flex;
 	justify-items: center;
 	align-items: center;
@@ -85,32 +89,27 @@ main {
 	padding-right: 30px;
 	padding-left: 30px;
 }
-.product__button:hover {
+.card__button:hover {
+	background-color: transparent;
 	color: var(--clr-accent);
-	border: 3px solid var(--clr-accent);
-}
-.product__button_first:hover {
-	background-color: var(--first-column-background);
+	outline: 3px solid var(--clr-accent);
+	transition: 0.5s;
 }
 
-.product__button_second:hover {
-	background-color: var(--second-column-background);
-}
-
-.product__button_third:hover {
-	background-color: var(--third-column-background);
-}
-
-.product__button_first {
+.card__button_first {
 	color: var(--first-column-background);
 }
 
-.product__button_second {
+.card__button_second {
 	color: var(--second-column-background);
 }
 
-.product__button_third {
+.card__button_third {
 	color: var(--third-column-background);
+}
+
+.card__button:active {
+	transform: translateY(10px);
 }
 
 @media screen and (max-width: 768px) {
@@ -119,9 +118,15 @@ main {
 		height: fit-content;
 	}
 
-	.product {
+	.cards {
 		display: flex;
 		flex-direction: column;
 		max-width: 100%;
+	}
+
+	.car-icon,
+	.card__name,
+	.card__ad-text {
+		margin-bottom: 30px;
 	}
 }
