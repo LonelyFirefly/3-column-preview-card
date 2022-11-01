@@ -9,7 +9,6 @@
     -   [Continued development](#continued-development)
     -   [Useful resources](#useful-resources)
 -   [Author](#author)
--   [Credits](#credits)
 
 ## Overview
 
@@ -72,8 +71,3 @@ In my future projects I really want to have more pracice with:
 
 -   LinkedIn - [Daniil Kalugin](https://www.linkedin.com/in/daniil-kalugin)
 -   Twitter - [@BeingMyselfFlow](https://www.twitter.com/BeingMyselfFlow)
-
-### Credits
-
-I really wanna thank my mentor <a href="https://github.com/fpetrakov">fpetrakov</a> who supported me throughout this whole challenge. Follow him on <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="20"/><a href="https://github.com/fpetrakov">GitHub</a> and <img src="https://media.giphy.com/media/SMKiEh9WDO6ze/giphy.gif" width="20"/><a href="https://twitter.com/fedya_petrakov">Twitter</a>.
-
