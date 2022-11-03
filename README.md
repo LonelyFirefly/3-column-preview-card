@@ -1,8 +1,8 @@
 # 3-column-preview-card
 
 ## Table of contents
-
--   [Links](#links)
+-   [Overview](#overview)
+	-   [Links](#links)
 -   [My process](#my-process)
     -   [Built with](#built-with)
     -   [What I learned](#what-i-learned)
